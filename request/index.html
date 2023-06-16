@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Requers API</title>
+</head>
+<body>
+  <div class="main">
+    <h1>Запросы REST API</h1>
+    <section class="section register">
+      <h2>Регистрация</h2>
+      <div class="contents">
+        <div class="request">
+          <form class="form">
+            <label>
+              <p>Email</p>
+              <input type="email" name="email" required minlength="3" maxlength="30">
+            </label>
+            <label>
+              <p>Имя</p>
+              <input type="text" name="name" minlength="3" maxlength="20">
+            </label>
+            <label>
+              <p>Логин</p>
+              <input type="text" name="login" minlength="3" maxlength="20">
+            </label>
+            <label>
+              <p>Пароль</p>
+              <input type="password" name="password" required minlength="3" maxlength="20">
+            </label>
+            <label>
+              <p>Avatar url</p>
+              <input type="url" name="avatar">
+            </label>
+            <div class="box-btn">
+              <button class="btn btn-ok" type="submit">Отправить</button>
+              <button class="btn btn-reset" type="reset">Очистить</button>
+            </div>
+          </form>
+        </div>
+        <div class="response"></div>
+      </div>
+    </section>
+    <section class="section login">
+      <h2>Авторизация</h2>
+      <div class="contents">
+        <div class="request">
+          <form class="form">
+            <label>
+              <p>Email</p>
+              <input type="email" name="email" required minlength="3" maxlength="30">
+            </label>
+            <label>
+              <p>Пароль</p>
+              <input type="password" name="password" required minlength="3" maxlength="20">
+            </label>
+            <div class="box-btn">
+              <button class="btn btn-ok" type="submit">Отправить</button>
+              <button class="btn btn-reset" type="reset">Очистить</button>
+            </div>
+          </form>
+        </div>
+        <div class="response"></div>
+      </div>
+    </section>
+    <section class="section get-user">
+      <h2>Пользователь по id</h2>
+      <div class="contents">
+        <div class="request">
+          <form class="form">
+            <label>
+              <p>id</p>
+              <input type="text" name="id" required>
+            </label>
+            <div class="box-btn">
+              <button class="btn btn-ok" type="submit">Отправить</button>
+              <button class="btn btn-reset" type="reset">Очистить</button>
+            </div>
+          </form>
+        </div>
+        <div class="response"></div>
+      </div>
+    </section>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
